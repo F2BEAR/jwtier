@@ -1,0 +1,61 @@
+{
+  "name": "jwtier",
+  "version": "1.0.0",
+  "description": "A CLI tool to generate JWTs on the fly",
+  "type": "module",
+  "main": "bin/index.min.js",
+  "preferGlobal": true,
+  "bin": {
+    "jwtier": "bin/index.min.js"
+  },
+  "publishConfig": {
+    "registry": "https://registry.npmjs.org/",
+    "tag": "latest"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node .",
+    "commit": "cz",
+    "release": "semantic-release",
+    "watch": "rollup -c -w",
+    "build": "set NODE_ENV=production&& rollup -c"
+  },
+  "keywords": [
+    "JWT",
+    "CLI",
+    "Generator"
+  ],
+  "author": "F2BEAR",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/F2BEAR/jwtier"
+  },
+  "homepage": "https://github.com/F2BEAR/jwtier/blob/master/README.md",
+  "bugs": {
+    "url": "https://github.com/F2BEAR/jwtier/issues"
+  },
+  "dependencies": {
+    "@inquirer/prompts": "^3.0.0",
+    "clipboardy": "^3.0.0",
+    "jose": "^4.14.4",
+    "log-symbols": "^5.1.0"
+  },
+  "devDependencies": {
+    "@rollup/plugin-terser": "^0.4.3",
+    "@rollup/plugin-typescript": "^11.1.2",
+    "@types/node": "^20.4.2",
+    "commitizen": "^4.3.0",
+    "cz-conventional-changelog": "^3.3.0",
+    "prettier": "^3.0.0",
+    "rollup": "^3.26.3",
+    "rollup-plugin-cleanup": "^3.2.1",
+    "rollup-plugin-dts": "^5.3.0",
+    "rollup-plugin-license": "^3.0.1",
+    "rollup-plugin-preserve-shebang": "^1.0.1",
+    "semantic-release": "^21.0.7",
+    "terser": "^5.19.1",
+    "ts-node": "^10.9.1",
+    "typescript": "^5.1.6"
+  }
+}
