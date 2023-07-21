@@ -2,6 +2,9 @@
   "name": "jwtier",
   "version": "1.0.2",
   "description": "A CLI tool to generate JWTs on the fly",
+  "author": "F2BEAR",
+  "email" : "contacto@facu.dev",
+  "url" : "https://facu.dev/",
   "type": "module",
   "main": "bin/index.min.js",
   "preferGlobal": true,
@@ -25,13 +28,9 @@
     "CLI",
     "Generator"
   ],
-  "author": "F2BEAR",
   "license": "MIT",
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/F2BEAR/jwtier"
-  },
-  "homepage": "https://github.com/F2BEAR/jwtier/blob/main/README.md",
+  "repository": "github:F2BEAR/jwtier",
+  "homepage": "https://github.com/F2BEAR/jwtier#readme",
   "bugs": {
     "url": "https://github.com/F2BEAR/jwtier/issues"
   },
