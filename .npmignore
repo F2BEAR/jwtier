@@ -3,3 +3,5 @@ src/*
 .releaserc
 rollup.config.js
 tsconfig.json
+prettier.config.cjs
+yarn.lock
