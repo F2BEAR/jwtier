@@ -91,7 +91,11 @@ const gen = async () => {
 		console.log({ jwt, baseSecret });
 		return console.log(logSymbols.success, 'JWT copied to clipboard!');
 	} catch (err) {
+		if (err instanceof Error) {
+			console.error(logSymbols.error, err.message)
+		} else {
 		console.error(logSymbols.error, err);
+		}
 	}
 };
 

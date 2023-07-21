@@ -1,0 +1,33 @@
+name: 'release'
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  release:
+    name: release
+    runs-on: ubuntu-latest
+    steps:
+      - name: checkout
+        uses: actions/checkout@v3
+      - name: node
+        uses: actions/setup-node@v3
+        with:
+          node-version: 18
+          registry-url: https://registry.npmjs.org
+      - name: setup
+        run: npm install 
+      - name: build
+        run: npm run build
+      - name: release
+        run: npm run release
+        env:
+          GITHUB_TOKEN: ${{secrets.GH_TOKEN}}
+      - name: version
+        run: npm version ${{github.event.release.tag_name}} --no-git-tag-version
+      - name: publish
+        run: npm publish --access public --tag latest
+        env:
+          NODE_AUTH_TOKEN: ${{secrets.NPM_TOKEN}}
