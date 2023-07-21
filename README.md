@@ -1,8 +1,8 @@
 # JWTier
 
-![npm](https://img.shields.io/npm/v/jwtier)
+[![npm](https://img.shields.io/npm/v/jwtier)](https://www.npmjs.com/package/jwtier)
 [![GitHub issues](https://img.shields.io/github/issues/F2BEAR/jwtier)](https://github.com/F2BEAR/jwtier/issues)
-![GitHub](https://img.shields.io/github/license/f2bear/jwtier)
+[![GitHub](https://img.shields.io/github/license/f2bear/jwtier)](https://github.com/F2BEAR/jwtier/blob/main/LICENSE)
 [![Commitizen friendly](https://img.shields.io/badge/commitizen-friendly-brightgreen.svg)](http://commitizen.github.io/cz-cli/)
 [![semantic-release: angular](https://img.shields.io/badge/semantic--release-angular-e10079?logo=semantic-release)](https://github.com/semantic-release/semantic-release)
 
