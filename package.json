@@ -1,6 +1,6 @@
 {
   "name": "jwtier",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "A CLI tool to generate JWTs on the fly",
   "type": "module",
   "main": "bin/index.min.js",
@@ -31,7 +31,7 @@
     "type": "git",
     "url": "https://github.com/F2BEAR/jwtier"
   },
-  "homepage": "https://github.com/F2BEAR/jwtier/blob/master/README.md",
+  "homepage": "https://github.com/F2BEAR/jwtier/blob/main/README.md",
   "bugs": {
     "url": "https://github.com/F2BEAR/jwtier/issues"
   },
